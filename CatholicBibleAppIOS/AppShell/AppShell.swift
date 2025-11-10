@@ -41,3 +41,4 @@ struct AppFooter: View {
         .background(theme.currentTheme.background)
     }
 }
+
