@@ -1,9 +1,3 @@
-//
-//  HomeView.swift
-//  CatholicBibleAppIOS
-//
-//  Created by Norma Guzman on 11/9/25.
-//
 
 // Features/Home/HomeView.swift
 import SwiftUI

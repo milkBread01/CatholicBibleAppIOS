@@ -1,9 +1,3 @@
-//
-//  Card.swift
-//  CatholicBibleAppIOS
-//
-//  Created by Norma Guzman on 11/9/25.
-//
 
 // DesignSystem/Components/Card.swift
 import SwiftUI

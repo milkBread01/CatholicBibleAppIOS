@@ -1,9 +1,4 @@
-//
-//  SectionHeader.swift
-//  CatholicBibleAppIOS
-//
-//  Created by Norma Guzman on 11/9/25.
-//
+
 
 // DesignSystem/Components/SectionHeader.swift
 import SwiftUI

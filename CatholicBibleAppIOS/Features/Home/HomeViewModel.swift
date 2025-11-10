@@ -1,9 +1,4 @@
-//
-//  HomeViewModel.swift
-//  CatholicBibleAppIOS
-//
-//  Created by Norma Guzman on 11/9/25.
-//
+
 
 
 // Features/Home/HomeViewModel.swift
