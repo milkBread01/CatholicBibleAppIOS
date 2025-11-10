@@ -1,34 +1,43 @@
-//
-//  AppShell.swift
-//  CatholicBibleAppIOS
-//
-//  Created by Norma Guzman on 11/9/25.
-//
-
-// AppShell/AppShell.swift
 import SwiftUI
 
 struct AppHeader: View {
+    @ObservedObject private var theme = ThemeManager.shared
+    
     var body: some View {
         HStack {
-            Text("App Name").font(AppFont.h1())
+            Text("App Name")
+                .font(.scaledTitle(theme.fontSize))
+                .foregroundColor(theme.currentTheme.primaryText)
             Spacer()
         }
-        .padding(.horizontal, Spacing.m)
-        .padding(.vertical, Spacing.s)
-        .background(AppColor.surface)
-        .overlay(Divider(), alignment: .bottom)
+        .padding(.horizontal, 16)
+        .padding(.vertical, 8)
+        .background(theme.currentTheme.secondaryBackground)
+        .overlay(Divider().background(theme.currentTheme.divider), alignment: .bottom)
     }
 }
 
 struct AppFooter: View {
+    @ObservedObject private var theme = ThemeManager.shared
+
     var body: some View {
         TabView {
-            HomeView().tabItem { Label("Home", systemImage: "house") }
-            Text("Library").tabItem { Label("Library", systemImage: "books.vertical") }
-            Text("Bible").tabItem { Label("Bible", systemImage: "book") }
-            Text("Calendar").tabItem { Label("Calendar", systemImage: "calendar") }
-            Text("Settings").tabItem { Label("Settings", systemImage: "gearshape") }
+            HomeView()
+                .tabItem { Label("Home", systemImage: "house") }
+
+            Text("Library")
+                .tabItem { Label("Library", systemImage: "books.vertical") }
+
+            Text("Bible")
+                .tabItem { Label("Bible", systemImage: "book") }
+
+            Text("Calendar")
+                .tabItem { Label("Calendar", systemImage: "calendar") }
+
+            Text("Settings")
+                .tabItem { Label("Settings", systemImage: "gearshape") }
         }
+        .accentColor(theme.currentTheme.accent)
+        .background(theme.currentTheme.background)
     }
 }
