@@ -13,7 +13,7 @@ struct RootTabs: View {
             NavigationStack { BibleDashboardView() }
                 .tabItem { Label("Bible", systemImage: "book") }
 
-            NavigationStack { Text("Calendar") }           // stub for now
+            NavigationStack { Text("Calendar") }
                 .tabItem { Label("Calendar", systemImage: "calendar") }
 
             NavigationStack { SettingsView() }
