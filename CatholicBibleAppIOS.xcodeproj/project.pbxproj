@@ -6,13 +6,30 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		77749B4A2EC950FD00341810 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 77749B492EC950FD00341810 /* SQLite */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		77C187A62EC1348A005D86A5 /* CatholicBibleAppIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatholicBibleAppIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		77749B4F2ECAB70300341810 /* Exceptions for "CatholicBibleAppIOS" folder in "CatholicBibleAppIOS" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				DataLayer/Database/user_info.db,
+			);
+			target = 77C187A52EC1348A005D86A5 /* CatholicBibleAppIOS */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		77C187A82EC1348A005D86A5 /* CatholicBibleAppIOS */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				77749B4F2ECAB70300341810 /* Exceptions for "CatholicBibleAppIOS" folder in "CatholicBibleAppIOS" target */,
+			);
 			path = CatholicBibleAppIOS;
 			sourceTree = "<group>";
 		};
@@ -23,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77749B4A2EC950FD00341810 /* SQLite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +83,7 @@
 			);
 			name = CatholicBibleAppIOS;
 			packageProductDependencies = (
+				77749B492EC950FD00341810 /* SQLite */,
 			);
 			productName = CatholicBibleAppIOS;
 			productReference = 77C187A62EC1348A005D86A5 /* CatholicBibleAppIOS.app */;
@@ -94,6 +113,9 @@
 			);
 			mainGroup = 77C1879D2EC1348A005D86A5;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				77749B482EC950FD00341810 /* XCRemoteSwiftPackageReference "SQLite.swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 77C187A72EC1348A005D86A5 /* Products */;
 			projectDirPath = "";
@@ -328,6 +350,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		77749B482EC950FD00341810 /* XCRemoteSwiftPackageReference "SQLite.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.15.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		77749B492EC950FD00341810 /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 77749B482EC950FD00341810 /* XCRemoteSwiftPackageReference "SQLite.swift" */;
+			productName = SQLite;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 77C1879E2EC1348A005D86A5 /* Project object */;
 }

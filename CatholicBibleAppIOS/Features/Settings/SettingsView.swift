@@ -1,7 +1,8 @@
 import SwiftUI
 
 struct SettingsView: View {
-    @ObservedObject var themeManager = ThemeManager.shared
+    //@ObservedObject var themeManager = ThemeManager.shared
+    @EnvironmentObject var themeManager: ThemeManager
     @State private var notificationsEnabled = false
     @State private var locationEnabled = false
     @State private var showingResetAlert = false

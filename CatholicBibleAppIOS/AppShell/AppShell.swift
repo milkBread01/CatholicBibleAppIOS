@@ -1,7 +1,8 @@
 import SwiftUI
 
 struct AppHeader: View {
-    @ObservedObject private var theme = ThemeManager.shared
+    //@ObservedObject private var theme = ThemeManager.shared
+    @EnvironmentObject var theme: ThemeManager
     
     var body: some View {
         HStack {
@@ -18,7 +19,8 @@ struct AppHeader: View {
 }
 
 struct AppFooter: View {
-    @ObservedObject private var theme = ThemeManager.shared
+    //@ObservedObject private var theme = ThemeManager.shared
+    @EnvironmentObject var theme: ThemeManager
 
     var body: some View {
         TabView {
